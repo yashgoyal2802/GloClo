@@ -8,7 +8,8 @@ class Loading extends StatefulWidget {
 
 class _LoadingState extends State<Loading> {
   void getData() async {
-    get('');
+    Response response =
+        await get('https://jsonplaceholder.typicode.com/todos/1');
   }
 
   @override
