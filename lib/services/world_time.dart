@@ -28,5 +28,3 @@ class WorldTime {
     time = now.toString();
   }
 }
-
-//WorldTime worldtime = WorldTime(location: '', flag: '', url: '');
