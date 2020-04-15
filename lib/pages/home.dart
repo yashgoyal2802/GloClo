@@ -36,8 +36,14 @@ class _HomeState extends State<Home> {
                   onPressed: () {
                     Navigator.pushNamed(context, '/location');
                   },
-                  icon: Icon(Icons.edit_location),
-                  label: Text("Edit Location"),
+                  icon: Icon(
+                    Icons.edit_location,
+                    color: Colors.grey[300],
+                  ),
+                  label: Text(
+                    "Edit Location",
+                    style: TextStyle(color: Colors.grey[300]),
+                  ),
                 ),
                 SizedBox(
                   height: 20.0,
@@ -50,6 +56,7 @@ class _HomeState extends State<Home> {
                       style: TextStyle(
                         fontSize: 28.0,
                         letterSpacing: 2.0,
+                        color: Colors.white,
                       ),
                     ),
                   ],
@@ -61,6 +68,7 @@ class _HomeState extends State<Home> {
                   data2['time'],
                   style: TextStyle(
                     fontSize: 66.0,
+                    color: Colors.white,
                   ),
                 ),
               ],
