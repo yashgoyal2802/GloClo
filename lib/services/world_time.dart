@@ -28,7 +28,7 @@ class WorldTime {
           Duration(hours: int.parse(offsetH), minutes: int.parse(offsetM)));
 
       // set the time
-      time = now.toString();
+      time = DateFormat.jm().format(now);
     } catch (e) {
       print('Caught Error: $e');
       time = "Could not get time data..";
